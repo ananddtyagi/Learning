@@ -1,0 +1,28 @@
+.survey-page-body{
+  padding: 100px;
+}
+
+#title{
+  color: #00BF6F;
+}
+
+legend.required:before {
+  content: "* ";
+}
+
+fieldset {
+  border: hidden;
+}
+
+label {
+  vertical-align: baseline;
+}
+
+td, th{
+  width: 30%;
+}
+
+td {
+  position:right;
+  
+}
