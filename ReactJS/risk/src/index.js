@@ -12,19 +12,7 @@ class Risk extends React.Component{
 
     };
   }
-
-  calcScore(formData) {
-    return this.state.scoring[formData.q1] +
-      this.state.scoring[formData.q2] +
-      this.state.scoring[formData.q3] +
-      this.state.scoring[formData.q4a] +
-      this.state.scoring[formData.q4b] +
-      this.state.scoring[formData.q4c] +
-      this.state.scoring[formData.q5] +
-      this.state.scoring[formData.q6] +
-      this.state.scoring[formData.q7]
-  }
-
+  
     render () {
       return (
         <div class = "page-body">
