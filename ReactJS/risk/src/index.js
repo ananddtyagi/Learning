@@ -1,47 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Form } from "./_components";
+import { Slider }  from 'material-ui-slider';
 
 class Risk extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      calculatedRisk: 35,
+      calculatedRisk: 30,
       desiredRisk: 0,
 
     };
   }
-  
+
     render () {
       return (
         <div class = "page-body">
-        <h1>Your current risk score is:</h1>
-        <p>{this.calcScore(this.state.calculatedRisk)}</p>
-        <Form
-          nonvalidate={true}
-          fields={[{
-            name: 'desiredRisk', label: "Desired Risk", requried: true
-          }]}
-          buttons={[{
-              type: 'button',
-              label:'Submit',
-              color:'primary',
-              disabled: false,
-              action: (formInstance, formData, buttonEvent, btnKey) => {
-                //send formData to the risk analysis page
-                this.setState({
-                  desiredRisk: formData
-                })
-                console.log(this.state.desiredRisk) //why does it take two clicks for this to show up????
-              }
-            }
-            ]}
-
-          loading={false}
-          submitAction={{}}
-
-        />
+          <p>Slider</p>
+          <Slider
+            defaultValue={this.state.calculatedRisk}
+            color={"red"}
+            >
+              Hello
+          </Slider>
         </div>
       );
     }

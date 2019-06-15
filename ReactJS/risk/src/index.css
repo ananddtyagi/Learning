@@ -1,7 +1,9 @@
-.survey-page-body{
+.page-body{
   max-width: 850px;
   margin: auto;
+  padding: 200px;
 }
+
 
 #title{
   color: #0e6b99;
@@ -27,5 +29,4 @@ td, th{
 
 td {
   position:right;
-
 }
